@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadLeaderboard();
         
         // Hiển thị màn hình chiến thắng / thống kê
-        const title = playerData.isWin ? "🎉 PHÁ ĐẢO THÀNH CÔNG 🎉" : "HOÀN THÀNH";
+        const title = playerData.isWin ? "<span class='icon-party flip'>🎉</span> <span>PHÁ ĐẢO THÀNH CÔNG</span> <span class='icon-party'>🎉</span>" : "HOÀN THÀNH";
         UI.showStats(title, playerData.time, playerData.correctAnswers, playerData.hintsUsed, playerData.score, isTop3);
     }
 

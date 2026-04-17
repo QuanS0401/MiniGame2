@@ -178,7 +178,7 @@ const UI = {
     },
     
     showStats(title, time, correctCount, hints, score, isTop3) {
-        document.getElementById('statsTitle').textContent = title;
+        document.getElementById('statsTitle').innerHTML = title;
         document.getElementById('statTime').textContent = this.formatTime(time);
         document.getElementById('statCorrect').textContent = correctCount;
         document.getElementById('statHints').textContent = hints;
